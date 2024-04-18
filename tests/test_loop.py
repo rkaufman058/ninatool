@@ -16,7 +16,7 @@ NWSNAIL = loop(
     right_branch = [J1, J2, J3], 
     name = 'dcsquid', 
     observe_elements=True, 
-    stray_inductance = True)#%%
+    stray_inductance = True)
 
 plt.plot(NWSNAIL.flux, NWSNAIL.adm[0], label = 'multivalued = ' + str(NWSNAIL.multivalued))
 NW0.delta = 0.9

@@ -101,7 +101,7 @@ class Nlind(object) :
     @property
     def phi(self):
         '''
-        Returns the total phase drop across self, in radiants.
+        Returns the total phase drop across self, in radians.
         '''
         return(self.__phi)
 

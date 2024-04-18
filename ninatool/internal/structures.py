@@ -4,8 +4,8 @@ from math import factorial
 from .elements import Nlind, L, J, C
 from .support_functions import check_order
 
-NUM_POINTS = 1001 # number of points for default phase array
-NUM_PERIODS = 2 # number of periods for default phase array
+NUM_POINTS = 20001 # number of points for default phase array
+NUM_PERIODS = 10 # number of periods for default phase array
 
 default_phase_array = NUM_PERIODS * 2 * pi * linspace(-.5, .5, NUM_POINTS)
 
