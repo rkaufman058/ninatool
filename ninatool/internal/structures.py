@@ -372,7 +372,8 @@ class loop(Nlind):
                  right_branch,
                  stray_inductance = False,
                  name = '',
-                 observe_elements = True):
+                 observe_elements = True,
+                 Lstray_val = 0.1):
         
         self.__left_elements = left_branch
         self.__right_elements = right_branch
@@ -402,7 +403,7 @@ class loop(Nlind):
         
         if self.has_Lstray:
             self.__Lstray = L(
-                L = .1,
+                L = Lstray_val,
                 order = self.order, 
                 name = self.name + '.Lstray')
             
